@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 // Database connection.
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('mongodb://heroku_8g6qd9p0:ardiisamlab5@ds019471.mlab.com:19471/heroku_8g6qd9p0');
+var db = monk('heroku_8g6qd9p0:ardiisamlab5@ds019471.mlab.com:19471/heroku_8g6qd9p0');
+// var db = monk('localhost:27017/xsuperword');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
